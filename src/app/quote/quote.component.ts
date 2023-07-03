@@ -13,7 +13,7 @@ export class QuoteComponent implements OnInit, OnDestroy  {
 
    
     title:string = 'Quote Page';
-    showName: boolean = false;
+    showName: boolean = true;
     errorMessage: string = '';
     sub! : Subscription;
     quotes: IQuote[] = [];
