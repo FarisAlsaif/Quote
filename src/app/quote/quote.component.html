@@ -1,0 +1,24 @@
+<section class="container mt-5">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <h2 class="text-center mb-4">Famous Quotes 
+          
+        </h2>
+        <button  (click)="toggleName()">
+          {{showName ? "Hide":"Show"}} authors</button>
+        
+        <div class="card-deck">
+          <div class="card" *ngFor="let quote of quotes">
+            <div class="card-body">
+              <blockquote class="blockquote">
+                <p class="card-text">{{quote.text | changeYou}} </p>
+                <footer *ngIf="showName" class="blockquote-footer"><a [routerLink]="['/quotes/author',quote.id]">{{quote.author}}</a></footer>
+
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

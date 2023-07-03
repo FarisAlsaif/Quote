@@ -1,0 +1,26 @@
+<section class="container mt-5">
+    <div class="row">
+      <div class="col-lg-4">
+        
+        <img src={{author?.image_url}} class="img-fluid rounded-circle mb-3" alt="Author Photo">
+      </div>
+      <div class="col-lg-8">
+        <h2>{{author?.author}}</h2>
+        <p class="lead">{{author?.bio}}</p>
+        <!-- <blockquote class="blockquote">
+          <p class="mb-0">"{{author.?quote}}"</p>
+          <footer class="blockquote-footer">Author Name</footer>
+        </blockquote> -->
+        <div class='card-footer'>
+          <button class='btn btn-outline-secondary'
+                  style='width:80px'
+                  (click)='onBack()'>
+            <i class='fa fa-chevron-left'></i> Back
+          </button>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  

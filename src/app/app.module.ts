@@ -1,16 +1,30 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+// import { WelcomeComponent } from './welcome/welcome.component';
+import { QuoteModule } from './quote/quote.module';
+import { RouterModule } from '@angular/router';
+import { WelcomeModule } from './welcome/welcome.module';
+import { AuthorModule } from './quote/author/author.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+  
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    RouterModule.forRoot([
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
+      { path: '**', redirectTo: 'home', pathMatch: 'full' }
+    ]),
+    QuoteModule,
+    WelcomeModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "bio": "Steve Jobs was an American business magnate, industrial designer, and inventor. He co-founded Apple Inc. and played a significant role in revolutionizing the personal computer industry with products like the Macintosh, iPhone, and iPad. Known for his visionary leadership and innovative thinking, Jobs left a lasting impact on the technology and entertainment sectors.",
+      "author": "Steve Jobs",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Steve_Jobs_Headshot_2010-CROP2.jpg/640px-Steve_Jobs_Headshot_2010-CROP2.jpg"
+    },
+    {
+      "id": 2,
+      "bio": "Albert Einstein was a German-born theoretical physicist who is best known for developing the theory of relativity, one of the pillars of modern physics. His groundbreaking contributions to the scientific community earned him the Nobel Prize in Physics in 1921. Einstein's work revolutionized our understanding of space, time, and energy, and he remains one of the most influential scientists in history.",
+      "author": "Albert Einstein",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/247px-Albert_Einstein_Head.jpg"
+    },
+    {
+      "id": 3,
+      "bio": "Winston Churchill was a British statesman, writer, and orator who served as the Prime Minister of the United Kingdom during World War II. Known for his powerful speeches and unwavering leadership, Churchill played a crucial role in rallying the British people during one of their most challenging times. His contributions to British history and his resolute spirit have made him an iconic figure",
+      "author": "Winston Churchill",
+      "image_url": "https://www.english-heritage.org.uk/siteassets/home/visit/blue-plaques/find-a-plaque/blue-plaques-a-e/churchill-1950.jpg?maxwidth=580&mode=none&scale=downscale&quality=60&anchor=&WebsiteVersion=20220831140117"
+    },
+    {
+      "id": 4,
+      "bio": "leanor Roosevelt was an American diplomat, activist, and First Lady of the United States from 1933 to 1945. She was a passionate advocate for human rights and played a significant role in shaping the Universal Declaration of Human Rights. Roosevelt's tireless efforts in promoting social justice and equality have made her an inspirational figure in American history.",
+      "author": "Eleanor Roosevelt",
+      "image_url": "https://cdn.britannica.com/78/19578-050-E720BE72/Eleanor-Roosevelt-1950.jpg?w=400&h=300&c=crop"
+    },
+    {
+      "id": 5,
+      "bio": "am Levenson was an American humorist, author, and educator. Known for his wit and wisdom, Levenson's words often carried insightful life lessons and reflections on human nature. He captured the essence of time and productivity in his famous quote about not watching the clock. Levenson's unique perspective continues to resonate with readers today.",
+      "author": "Sam Levenson",
+      "image_url": "https://1.bp.blogspot.com/-QKfUoKtnmdY/VGWUP1oaelI/AAAAAAAAK0Q/susjkFUk0FY/s320/Sam%2BLevenson.jpg"
+    },
+    {
+      "id": 6,
+      "bio": "Theodore Roosevelt was an American statesman, author, explorer, and 26th President of the United States. Known for his energetic and progressive leadership, Roosevelt made significant contributions in the areas of conservation and trust-busting. His quote about believing in oneself reflects his philosophy of taking action and striving for success.",
+      "author": "Theodore Roosevelt",
+      "image_url": "https://www.nobelprize.org/images/roosevelt-12852-portrait-medium.jpg"
+    },
+    {
+      "id": 7,
+      "bio": "Franklin D. Roosevelt, often referred to as FDR, was an American statesman and the 32nd President of the United States. He led the country through the Great Depression and World War II, implementing various reforms and initiatives to alleviate the economic and social challenges of the time. Roosevelt's quote about the limitless possibilities of tomorrow reflects his optimism and resilience.",
+      "author": "Franklin D. Roosevelt",
+      "image_url": "https://assets.editorial.aetnd.com/uploads/2009/10/gettyimages-3437022.jpg"
+    },
+    {
+      "id": 8,
+      "bio": "H. Jackson Brown Jr. is an American author best known for his inspirational book, Life's Little Instruction",
+      "author": "H. Jackson Brown Jr.",
+      "image_url": "https://static01.nyt.com/images/2021/12/26/obituaries/26Brown-obit1/merlin_199556214_4d14c699-926d-415f-9eba-beaae8ac7a15-mediumSquareAt3X.jpg"
+    },
+    {
+      "id": 9,
+      "bio": "The biggest risk is not taking any risk. In a world that is changing quickly, the only strategy that is guaranteed to fail is not taking risks.",
+      "author": "Mark Zuckerberg",
+      "image_url": "https://example.com/mark_zuckerberg.jpg"
+    },
+    {
+      "id": 10,
+      "bio": "The only person you are destined to become is the person you decide to be.",
+      "author": "Ralph Waldo Emerson",
+      "image_url": "https://example.com/ralph_emerson.jpg"
+    }
+  ]
+  
