@@ -4,6 +4,8 @@ import { ChangeYouPipe } from '../shared/change-you.pip';
 import { QouteService } from './qoute-service';
 import { Subscription } from 'rxjs';
 
+import { ActivatedRoute, Router } from '@angular/router';
+
 @Component({
   selector: 'app-quote',
   templateUrl: './quote.component.html',
@@ -18,7 +20,8 @@ export class QuoteComponent implements OnInit, OnDestroy  {
     sub! : Subscription;
     quotes: IQuote[] = [];
 
-    constructor(private QouteService: QouteService) {}
+    constructor(private QouteService: QouteService,
+       private router: Router) {}
 
 
   
@@ -33,6 +36,10 @@ export class QuoteComponent implements OnInit, OnDestroy  {
     }
     ngOnDestroy(): void {
       this.sub.unsubscribe();
+    }
+    newQuoteNav(): void {
+    this.router.navigate(['/quotes/new']);
+      
     }
      
 

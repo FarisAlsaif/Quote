@@ -3,6 +3,8 @@ import { IQuote } from "./quotes.I";
 
 import { HttpClient, HttpErrorResponse } from "@angular/common/http";
 import { Injectable } from "@angular/core";
+import * as path from "path";
+import * as fs from 'fs';
 import { Observable, catchError, tap, throwError, map } from "rxjs";
 
 
@@ -13,9 +15,19 @@ import { Observable, catchError, tap, throwError, map } from "rxjs";
 
 
 export class QouteService {
-  static getQuotes(): IQuote[] {
-    throw new Error('Method not implemented.');
-  }
+
+  // private filePath = path.join(__dirname,'api/quotes.json');
+  // private fileData = fs.readFileSync(this.filePath, 'utf8');
+  
+  // addQuote(quote: IQuote): Observable<IQuote>|void {
+  //    const jsonData = JSON.parse(this.fileData);
+  // }
+
+  
+
+
+
+
 
 
 // private quotesUrl = "assets/quotes.json";
@@ -23,10 +35,6 @@ private quotesUrl = "api/quotes.json";
 
 
   constructor(private http: HttpClient) { }
-
-
-
-
       getQuotes(): Observable<IQuote[]> {
     return this.http.get<IQuote[]>(this.quotesUrl)
       .pipe(

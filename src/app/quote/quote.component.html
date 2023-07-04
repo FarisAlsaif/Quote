@@ -1,9 +1,13 @@
 <section class="container mt-5">
     <div class="row">
       <div class="col-lg-8 offset-lg-2">
-        <h2 class="text-center mb-4">Famous Quotes 
-          
+        <h2 class="text-center mb-4">Famous Quotes     
         </h2>
+        <button class='btn btn-outline-secondary'
+                  style='width:80px'
+                  (click)='newQuoteNav()'>
+            <i class='fa fa-chevron-left'></i> Add Quote
+          </button>
         <button  (click)="toggleName()">
           {{showName ? "Hide":"Show"}} authors</button>
         
