@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { NewQuoteI } from './new-quote.I';
+import { INewQuote } from './new-quote.I';
 import { Observable, of } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
@@ -12,7 +12,11 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
-  postQuote(newQuote: NewQuoteI): Observable<NewQuoteI> {
-    return this.http.post<NewQuoteI>(this.dbUrl, newQuote);
+  postQuote(newQuote: INewQuote): Observable<INewQuote> {
+    console.log('posting quote: ', newQuote);
+
+    
+
+    return this.http.post<INewQuote>(this.dbUrl, newQuote);
   }
 }

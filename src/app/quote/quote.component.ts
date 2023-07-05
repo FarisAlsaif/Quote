@@ -23,11 +23,6 @@ export class QuoteComponent implements OnInit, OnDestroy  {
     constructor(private QouteService: QouteService,
        private router: Router) {}
 
-
-  
-
-
-
     ngOnInit(): void {
       this.sub = this.QouteService.getQuotes().subscribe({
         next: quotes => { this.quotes = quotes; },
