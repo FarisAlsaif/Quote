@@ -1,26 +1,49 @@
-
-
 <div class="container">
     <h2>new quote</h2>
-    <form action="">
-    <div class="form-group">
-        <label for="author">author</label>
-        <input id="author" name="author" class="form-control" required>
-    </div>
-    <div class="form-group">
-        <label for="quote">quote</label>
-        <input id="quote" name="quote" class="form-control" required>
-    </div>
-    <div class="form-group">
-        <label>Bio</label>
-        <textarea class="form-control" aria-label="With textarea" 
-        rows="5"
-        required></textarea>
-      </div>
-      <div class="form-group">
-        <label for="image">Image URL</label>
-        <input id="image" name="image" class="form-control" required>
-    </div>
-        <button type="submit" class="btn btn-primary  " >Ok</button>
+    <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+        <div class="form-group">
+            <label for="author">author name</label>
+            <input id="author" name="author" class="form-control" [(ngModel)]="newQuote.author" minlength="3"
+                maxlength="30" required #authorField="ngModel"
+                [class.field-error]="authorField.invalid && form.submitted">
+        </div>
+        <div [hidden]="authorField.valid || !form.submitted" class="alert alert-danger">
+            author name is required and must be between 3 and 30 characters
+        </div>
+        <div class="form-group">
+            <label for="quote">quote</label>
+            <input id="quote" name="quote" class="form-control" [(ngModel)]="newQuote.quote" minlength="9"
+                #quoteField="ngModel" required [class.field-error]="quoteField.invalid && form.submitted">
+
+        </div>
+        <div [hidden]="quoteField.valid || !form.submitted" class="alert alert-danger">
+            quote is required and must be at least 9 characters
+        </div>
+        <div class="form-group">
+            <label>Bio</label>
+            <textarea name="bio" class="form-control" aria-label="With textarea" rows="5" [(ngModel)]="newQuote.bio"
+                minlength="20" maxlength="450" required #bioField="ngModel"
+                [class.field-error]="bioField.invalid && form.submitted">
+</textarea>
+        </div>
+        <div [hidden]="bioField.valid || !form.submitted" class="alert alert-danger">
+            bio is required and must be between 20 and 450 characters
+        </div>
+        <div class="form-group">
+            <label for="image">author image URL</label>
+            <input type="url" id="image" name="image" class="form-control" [(ngModel)]="newQuote.imageUlr"
+                pattern="https?://.+" required #imageField="ngModel"
+                [class.field-error]="imageField.invalid && form.submitted">
+        </div>
+        <div [hidden]="imageField.valid || !form.submitted" class="alert alert-danger">
+            author image is required and must be a valid URL
+        </div>
+        <div *ngIf="postError" class="alert alert-danger">
+            {{postErrorMessage}} 
+        </div>
+      
+        <button type="submit" class="btn btn-primary">Ok</button>
     </form>
 </div>
+<!-- 
+{{form.value | json}} -->

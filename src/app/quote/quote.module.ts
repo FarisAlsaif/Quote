@@ -10,6 +10,7 @@ import { NewQuoteComponent } from './new-quote/new-quote.component';
 
 
 
+
 @NgModule({
   declarations: [
     
@@ -22,6 +23,7 @@ import { NewQuoteComponent } from './new-quote/new-quote.component';
     CommonModule, 
     HttpClientModule, 
     FormsModule,
+       
     RouterModule.forChild([
       { path: 'quotes', component: QuoteComponent },
       { path: 'quotes/new', component: NewQuoteComponent },
