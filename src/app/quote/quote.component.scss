@@ -1,7 +1,5 @@
 
 @import 'src/styles.scss';
-
-
 body{
     color: $color4
 }
@@ -12,14 +10,12 @@ body{
     padding: 5px;  
 
 }
-
 button {
     @include btn; 
  
 }
 a {
-    @include links;
-    
+    @include links; 
 }
 .cd-con{
     margin: 5%; 
@@ -34,27 +30,12 @@ a {
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
-    animation: cardsIn 0.5s;
     &:hover{
-        box-shadow: 0 5px 5px $color4; 
-        transition: box-shadow 0.3s ease-in-out;
+        transition:  0.3s ease-in-out;
+        transform: scale(1.1);
     }
- 
-
 }
-@keyframes cardsIn {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
 p{
-    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
 .add-quote{

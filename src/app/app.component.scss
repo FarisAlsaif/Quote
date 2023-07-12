@@ -1,9 +1,5 @@
 @import 'src/styles.scss' ;
-
-
-
 body{
-    // background-color: $color1;
     flex-direction: row;
 }
 nav{
@@ -12,12 +8,12 @@ nav{
     position:sticky; 
     top: 0;
     display: flex;
-    // justify-content: center;
-    flex-direction: row; 
+    justify-content: center;
+    ul{
+      display: flex;
+    }
 }
 a{
   @include links; 
   color: white; 
-  // display: block;
-
 }
