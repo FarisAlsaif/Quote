@@ -1,28 +1,30 @@
-<section class="container mt-5">
-    <div class="row">
-      <div class="col-lg-8 offset-lg-2">
-        <h2 class="text-center mb-4">Famous Quotes     
+<body>
+  <section class="">
+    <div class="">
+      <div class="">
+        <h2 class="title">Famous Quotes     
         </h2>
-        <button class='btn btn-outline-secondary'
-                  style='width:80px'
+        <button 
+                  class="add-quote"
                   (click)='newQuoteNav()'>
-            <i class='fa fa-chevron-left'></i> Add Quote
+           Add Quote
           </button>
         <button  (click)="toggleName()">
           {{showName ? "Hide":"Show"}} authors</button>
-        
-        <div class="card-deck">
-          <div class="card" *ngFor="let quote of quotes">
-            <div class="card-body">
-              <blockquote class="blockquote">
-                <p class="card-text">{{quote.text | changeYou}} </p>
+          <!-- this div is the container of all quotes -->
+        <div class="cd-con"> 
+          <div class="cd" *ngFor="let quote of quotes">
+            <div class="cd-body">
+              <div class="quote-con">
+                <p class="quote">{{quote.text | changeYou}} </p>
                 <footer *ngIf="showName" class="blockquote-footer"><a [routerLink]="['/quotes/author',quote.id]">{{quote.author}}</a></footer>
 
-              </blockquote>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+</body>
   

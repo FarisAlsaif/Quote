@@ -3,13 +3,12 @@ import { IQuote } from './quotes.I';
 import { ChangeYouPipe } from '../shared/change-you.pip';
 import { QouteService } from './qoute-service';
 import { Subscription } from 'rxjs';
-
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-quote',
   templateUrl: './quote.component.html',
-  styleUrls: ['./quote.component.css']
+  styleUrls: ['./quote.component.scss']
 })
 export class QuoteComponent implements OnInit, OnDestroy  {
 

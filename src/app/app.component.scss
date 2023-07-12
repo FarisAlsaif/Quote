@@ -1,0 +1,23 @@
+@import 'src/styles.scss' ;
+
+
+
+body{
+    // background-color: $color1;
+    flex-direction: row;
+}
+nav{
+    background-color: $color4;
+    padding: 10px;
+    position:sticky; 
+    top: 0;
+    display: flex;
+    // justify-content: center;
+    flex-direction: row; 
+}
+a{
+  @include links; 
+  color: white; 
+  // display: block;
+
+}

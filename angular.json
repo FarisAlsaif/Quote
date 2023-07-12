@@ -26,7 +26,8 @@
               "src/api"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
+           
             ],
             "scripts": []
           },
@@ -89,12 +90,15 @@
               "src/app/quote/quotes.json"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
