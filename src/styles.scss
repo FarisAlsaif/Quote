@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+$color1:#DAFFFB;
+$color2:#176B87;
+$color3:#64CCC5;
+$color4:#001C30;
+
+@mixin btn{
+
+    margin: 5px;
+    padding: 7px;
+    color: $color4;
+    background-color: transparent;
+    // border: $color4 1px solid;
+    border-radius: 1rem;
+    border-width: 0px;
+  
+ 
+    
+    &:hover{
+        background-color: $color1;
+        color: $color4; 
+        border-radius: 1rem;  
+    }
+    
+}
+@mixin links{
+    margin: 5px;
+    padding: 5px;
+    color: $color4;
+    text-decoration: none;
+    height: auto;
+    width: auto;
+ 
+    
+    &:hover{
+        background-color: $color1;
+        color: $color4; 
+        border-radius: 1rem;  
+    }
+}

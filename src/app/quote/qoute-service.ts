@@ -16,21 +16,7 @@ import { Observable, catchError, tap, throwError, map } from "rxjs";
 
 export class QouteService {
 
-  // private filePath = path.join(__dirname,'api/quotes.json');
-  // private fileData = fs.readFileSync(this.filePath, 'utf8');
-  
-  // addQuote(quote: IQuote): Observable<IQuote>|void {
-  //    const jsonData = JSON.parse(this.fileData);
-  // }
 
-  
-
-
-
-
-
-
-// private quotesUrl = "assets/quotes.json";
 private quotesUrl = "api/quotes.json";
 
 
