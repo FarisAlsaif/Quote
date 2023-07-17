@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css";
+// @import "~bootstrap/dist/css/bootstrap.css";
 
 
 $color1:#DAFFFB;
@@ -40,4 +40,10 @@ $color4:#001C30;
         color: $color4; 
         border-radius: 1rem;  
     }
+}
+body,html{
+    margin: 0;
+    padding:0;
+    height: 100%;
+    // box-sizing: border-box;
 }

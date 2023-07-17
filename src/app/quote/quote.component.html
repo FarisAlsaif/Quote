@@ -14,13 +14,8 @@
           <!-- this div is the container of all quotes -->
         <div class="cd-con"> 
           <div class="cd" *ngFor="let quote of quotes">
-            <div class="cd-body">
-              <div class="quote-con">
-                <p class="quote">{{quote.text | changeYou}} </p>
-                <footer *ngIf="showName" class="blockquote-footer"><a [routerLink]="['/quotes/author',quote.id]">{{quote.author}}</a></footer>
-
-              </div>
-            </div>
+               <div class="quote">{{quote.text | changeYou}} </div>
+                <div><a [routerLink]="['/quotes/author',quote.id]">{{quote.author}}</a></div>
           </div>
         </div>
       </div>

@@ -18,26 +18,23 @@ a {
     @include links; 
 }
 .cd-con{
-    margin: 5%; 
+   
+    // display: flex
+    border: 10px solid rgb(161, 237, 161); 
+    ;
 }
-.cd{
-    // border-style:
-    background: white; 
+.cd {
+    border: 2px solid black; 
+    display: flex;
 
-    border-color: $color3;  
-    border:solid;
-    border-width: 1px;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    &:hover{
-        transition:  0.3s ease-in-out;
-        transform: scale(1.1);
+    & > div {
+        flex: 1;
+    }
+    & > .quote{
+        flex:1.5;
     }
 }
-p{
-    font-weight: bold;
-}
+
 .add-quote{
     position: fixed;
     bottom: 3%;

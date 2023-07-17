@@ -1,18 +1,24 @@
 @import 'src/styles.scss' ;
 body{
-    flex-direction: row;
+    height: 100%;
 }
 nav{
     background-color: $color4;
     padding: 10px;
     position:sticky; 
-    top: 0;
+    height: 100%;
+    width: 20%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+  
     ul{
-      display: flex;
+      & > li{
+        align-items: flex-start;
+        padding: 10px 0 ;
+      }
     }
 }
+
 a{
   @include links; 
   color: white; 
